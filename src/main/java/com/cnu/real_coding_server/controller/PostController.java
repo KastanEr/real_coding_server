@@ -19,6 +19,7 @@ public class PostController {
     public ResponseEntity<Post> createPost(@RequestBody PostRequest postRequest) {
         return ResponseEntity.ok(postService.createPost(postRequest));
     }
+
     @GetMapping
     public ResponseEntity<List<Post>> getPosts() {
         return ResponseEntity.ok(postService.getPosts());
